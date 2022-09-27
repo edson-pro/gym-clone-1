@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+}
+@font-face {
+  font-family: "Amazon"; /*a name to be used later*/
+  src: url("/fonts/AmazonEmber_Rg.ttf"); /*URL to font*/
+}
