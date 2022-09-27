@@ -551,7 +551,9 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-body {
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 209 114 / var(--tw-bg-opacity));
 }
 
 @font-face {
