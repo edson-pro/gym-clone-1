@@ -3,6 +3,121 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Amazon"; /*a name to be used later*/
-  src: url("/fonts/AmazonEmber_Rg.ttf"); /*URL to font*/
+  font-family: "DINWebPro";
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+  src: local("DINWebPro-Light"),
+    url("./fonts/DINWebPro-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINWebPro";
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+  src: local("DINWebPro-Light"),
+    url("./fonts/DINWebPro-LightIta.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINWebPro";
+  font-weight: 300;
+  font-style: normal;
+  font-display: fallback;
+  src: local("DINWebPro-Light"), url("./fonts/DINWebPro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINWebPro";
+  font-weight: 500;
+  font-style: normal;
+  font-display: fallback;
+  src: local("DINWebPro"), url("./fonts/DINWebPro.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINWebPro";
+  font-weight: 500;
+  font-style: italic;
+  font-display: fallback;
+  src: local("DINWebPro-Italic"),
+    url("./fonts/DINWebPro-Ita.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINWebPro";
+  font-weight: 700;
+  font-style: normal;
+  font-display: fallback;
+  src: local("DINWebPro-Bold"),
+    url("./fonts/DINWebPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINWebPro";
+  font-weight: 700;
+  font-style: italic;
+  font-display: fallback;
+  src: local("DINWebPro-Bold-Italic"),
+    url("./fonts/DINWebPro-BoldIta.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINWebPro";
+  font-weight: 800;
+  font-style: normal;
+  font-display: fallback;
+  src: local("DINWebPro-Black"),
+    url("./fonts/DINWebPro-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINWebPro";
+  font-weight: 800;
+  font-style: italic;
+  font-display: fallback;
+  src: local("DINWebPro-Black-Italic"),
+    url("./fonts/DINWebPro-BlackIta.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINWebPro";
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+  src: local("DINWebPro-Medium"),
+    url("./fonts/DINWebPro-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "DINWebPro";
+  font-weight: 600;
+  font-style: italic;
+  font-display: fallback;
+  src: local("DINWebPro-Medium-Italic"),
+    url("./fonts/DINWebPro-MediumIta.woff") format("woff");
+}
+body {
+  background-color: #e9eef1;
+}
+.navtop-item {
+  @apply text-[#3a3e41] border-r border-r-primary border-opacity-25 capitalize text-sm px-3 flex  items-center hover:underline hover:text-primary;
+}
+
+.navbottom-item {
+  @apply text-base py-[14.5px] hover:bg-[#494d50] hover:bg-opacity-40 transition-all cursor-pointer hover:underline bg-primary text-[#fff] capitalize px-4;
+}
+
+.btn {
+  @apply bg-primary px-6 py-3 text-sm text-[white];
+}
+
+.social-icon {
+  @apply bg-[#494d50] hover:bg-primary transition-all mx-[0px] first:ml-0 h-14 w-14 flex items-center justify-center;
+}
+
+.footer-bottom {
+  background: url("https://www.materna.com/SiteGlobals/Frontend/Images/icons/hatch-b.svg?__blob=normal&v=18")
+    repeat;
 }

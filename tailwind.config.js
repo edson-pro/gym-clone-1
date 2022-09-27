@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Amazon", "sans"],
+        sans: ["DINWebPro", "sans"],
       },
     },
     backdropBrightness: {
@@ -24,9 +24,7 @@ module.exports = {
       // => @media (max-width: 639px) { ... }
     },
     colors: {
-      primary: "#33d172",
-      primaryLight: "#33d172oa",
-      primaryDark: "#5dae5d",
+      primary: "#c30a17",
     },
   },
   plugins: [],
