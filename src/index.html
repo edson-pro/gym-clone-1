@@ -9,8 +9,8 @@
   </head>
   <body>
     <header>
-      <nav class="bg-white flex py-4 items-center justify-end">
-        <ul class="flex items-center">
+      <nav class="bg-white sm:hidden flex py-4 items-center justify-end">
+        <ul class="flex sm:hidden items-center">
           <li>
             <a class="navtop-item" href="">newsroom</a>
           </li>
@@ -45,7 +45,7 @@
       >
         <div class="w-full pt-2 px-4 flex justify-between items-center">
           <a
-            class="flex items-center absolute top-0 justify-center h-44 bg-primary mr-4"
+            class="flex items-center absolute top-0 justify-center sm:h-28 h-44 bg-primary mr-4"
             href=""
           >
             <img
@@ -56,7 +56,7 @@
           <div class="w-[210px]"></div>
 
           <div class="flex-1 justify-between flex items-center">
-            <ul class="flex px-0 items-center justify-between">
+            <ul class="flex sm:hidden px-0 items-center justify-between">
               <li>
                 <a class="navbottom-item" href=""> Portfolio </a>
               </li>
@@ -86,7 +86,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-cols-5 px-4 grid gap-10 py-36">
+        <div class="grid-cols-5 sm:grid-cols-1 px-4 grid gap-10 py-36">
           <div class="col-span-2">
             <div class="px-5 py-20 border-primary border-solid border-[5px]">
               <h1
@@ -101,7 +101,7 @@
               </p>
             </div>
           </div>
-          <div>
+          <div class="sm:hidden">
             <div
               class="border-[white] group overflow-hidden relative border-4 border-solid"
             >
@@ -127,7 +127,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="sm:hidden">
             <div
               class="border-[white] group overflow-hidden relative border-4 border-solid"
             >
@@ -153,7 +153,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="sm:hidden">
             <div
               class="border-[white] group overflow-hidden relative border-4 border-solid"
             >
@@ -189,7 +189,7 @@
           Learn more about our portfolio
         </h4>
       </div>
-      <div class="grid grid-cols-4 mt-10 gap-4">
+      <div class="grid sm:grid-cols-1 grid-cols-4 mt-10 gap-4">
         <div class="bg-[#e9eef1]">
           <div class="relative">
             <span
@@ -290,7 +290,7 @@
     </div>
 
     <div class="px-4 my-12">
-      <div class="grid bg-[white] grid-cols-2">
+      <div class="grid sm:grid-cols-1 bg-[white] grid-cols-2">
         <img
           src="https://www.materna.com/EN/Portfolio/Focus-Areas/Enterprise-Service-Management/ISG-Provider-Lens/_documents/Bilder/E-Portfolio-Lsg-ESM-ISG-Cover.png?__blob=normal&v=2"
           alt=""
@@ -317,7 +317,7 @@
         </h4>
       </div>
       <div class="px-4 my-12">
-        <div class="grid bg-[white] grid-cols-2">
+        <div class="grid sm:grid-cols-1 bg-[white] grid-cols-2">
           <img
             src="https://www.materna.com/SharedDocs/Bilder/DE/Referenzen/DsM/M-Flughafen-Denver-SBD.png?__blob=normal&v=2"
             alt=""
@@ -340,7 +340,7 @@
           </div>
         </div>
       </div>
-      <div class="grid px-4 my-3 grid-cols-4 gap-4">
+      <div class="grid sm:grid-cols-1 px-4 my-3 grid-cols-4 gap-4">
         <div class="relative">
           <img
             src="https://www.materna.com/SharedDocs/Bilder/DE/Referenzen/DsM/M-Flughafen-Denver-SBD.png?__blob=normal&v=2"
@@ -439,7 +439,7 @@
     <footer class="bg-[#3a3e41] mt-16">
       <div class="">
         <div
-          class="px-5 flex items-centr py-10 justify-between border-b-primary border-b-2"
+          class="px-5 sm:flex-col flex items-centr py-10 justify-between border-b-primary border-b-2"
         >
           <div>
             <h4 class="text-[white] text-xl">
@@ -455,7 +455,7 @@
             </div>
           </div>
           <div>
-            <h4 class="text-[white] text-center text-xl">We are social</h4>
+            <h4 class="text-[white] mt-5 text-center text-xl">We are social</h4>
             <div class="grid grid-cols-4 gap-3 mt-3 flex-wrap">
               <a class="social-icon" href="">
                 <img
@@ -501,10 +501,10 @@
             </div>
           </div>
         </div>
-        <div class="grid grid-cols-6 py-8 gap-2 px-5">
+        <div class="grid sm:grid-cols-1 sm grid-cols-6 py-8 gap-2 px-5">
           <div>
             <h4 class="text-lg text-[white] mb-4">Portfolio</h4>
-            <ul>
+            <ul class="sm:hidden">
               <li>
                 <a class="text-sm block py-2 text-[white]" href=""
                   >Fo­cus Ar­eas</a
@@ -530,7 +530,7 @@
 
           <div>
             <h4 class="text-lg text-[white] mb-4">About us</h4>
-            <ul>
+            <ul class="sm:hidden">
               <li>
                 <a class="text-sm block py-2 text-[white]" href=""
                   >Ma­ter­na Group
@@ -561,7 +561,7 @@
           </div>
           <div>
             <h4 class="text-lg text-[white] mb-4">Customers</h4>
-            <ul>
+            <ul class="sm:hidden">
               <li>
                 <a class="text-sm block py-2 text-[white]" href=""
                   >Cus­tomers</a
@@ -571,7 +571,7 @@
           </div>
           <div>
             <h4 class="text-lg text-[white] mb-4">Portfolio</h4>
-            <ul>
+            <ul class="sm:hidden">
               <li>
                 <a class="text-sm block py-2 text-[white]" href="">Events</a>
               </li>
@@ -579,7 +579,7 @@
           </div>
           <div>
             <h4 class="text-lg text-[white] mb-4">Careers</h4>
-            <ul>
+            <ul class="sm:hidden">
               <li>
                 <a class="text-sm block py-2 text-[white]" href="">Careers</a>
               </li>
@@ -587,7 +587,7 @@
           </div>
           <div>
             <h4 class="text-lg text-[white] mb-4">Service</h4>
-            <ul>
+            <ul class="sm:hidden">
               <li>
                 <a class="text-sm block py-2 text-[white]" href=""
                   >Ma­ter­na Sup­port</a
